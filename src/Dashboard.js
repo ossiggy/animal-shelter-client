@@ -10,8 +10,8 @@ export default class Dashboard extends React.Component {
   render(){
     return(
       <div>
-        <Pet {...this.props.dogToAdopt} />
-        <Pet {...this.props.catToAdopt} />
+        <Pet {...this.props.dogToAdopt} onAdoptAnimal={() => console.log('dog')} />
+        <Pet {...this.props.catToAdopt} onAdoptAnimal={() => console.log('cat')} />
       </div>
     )
   }
